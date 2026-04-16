@@ -1,0 +1,6 @@
+interface:
+  display_name: "Boss Greeting Writer"
+  short_description: "根据 JD 和经历生成更易获回复的 Boss 首条话术"
+  default_prompt: "Use $boss-greeting-writer to judge this JD, pick my strongest evidence, and write three Boss first-message variants."
+policy:
+  allow_implicit_invocation: true
