@@ -17,6 +17,7 @@ The skill helps Codex:
   - `自然版`
   - `稳妥版`
   - `超短首条版`
+- switch into a direct-output mode for rapid Boss application sessions
 
 See [`SKILL.md`](./SKILL.md) for the full behavior contract.
 
@@ -83,6 +84,19 @@ Typical inputs:
 - candidate narrative text
 - candidate screenshots
 - style constraints such as `自然`, `稳妥`, `更短`, `不要强调 AI`
+- direct-output constraints such as `直接给最终版`, `连打模式`, `不要分析`
+
+### Direct-output / 连打模式
+
+When the user is in a rapid-application flow and says things like:
+- `直接给最终版`
+- `连打模式`
+- `不要分析`
+- `不要再说给我一版`
+
+the skill should skip the full analysis structure and return just **one final Boss-ready first message** that can be copied and sent immediately.
+
+This mode is intended for high-frequency application sessions where speed and sendability matter more than explanation.
 
 ## Notes
 
