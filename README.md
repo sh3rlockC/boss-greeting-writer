@@ -132,3 +132,10 @@ Recommended use cases:
 ## Release
 
 This repository publishes a release archive named `boss-greeting-writer.tar.gz` so users can install without cloning git history.
+
+## Changelog & Releases
+
+- User-visible changes are tracked in [`CHANGELOG.md`](./CHANGELOG.md).
+- For a new release, update the `Unreleased` section first, then cut the versioned release.
+- GitHub Release notes should match the same user-visible changes, not just raw commit history.
+
