@@ -98,6 +98,32 @@ the skill should skip the full analysis structure and return just **one final Bo
 
 This mode is intended for high-frequency application sessions where speed and sendability matter more than explanation.
 
+Suggested prompt styles:
+
+```text
+用 boss-greeting-writer，连打模式。下面是 JD 和我的经历，直接给最终版，别分析。
+```
+
+```text
+直接用 boss-greeting-writer 出一条可发版首条消息，不要铺垫，不要三版。
+```
+
+```text
+这是新岗位，继续连打。保持自然、短一点、像真人发的。
+```
+
+What changes in this mode:
+- output only one sendable message by default
+- no long reasoning block unless the user asks
+- keep the first line compact
+- prefer conservative claims if OCR or image understanding is uncertain
+- treat `兴趣` / `长期关注` as supporting signal, not the core match argument
+
+Recommended use cases:
+- batch Boss applications
+- mobile copy-send workflows
+- cases where the user is iterating across many similar JDs quickly
+
 ## Notes
 
 - Screenshot inputs rely on the OCR skill named in [`SKILL.md`](./SKILL.md).
